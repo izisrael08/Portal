@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para o Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Portal Varejo</title>
+</head>
+<body>
+    <header>
+        <h1>Inovatia Portal Varejo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <div class="pesquisa-produtos">
+                <input type="text" placeholder="Buscar produtos" id="searchProduto">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       
+        <section id="orcamento">
+           
+            <h2>Orçamento</h2>
+            <div class="header-orcamento">
+                <div class="pesquisa-cliente">
+                    <input type="text" placeholder="Escolha seu Cliente">
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="vendedor">
+                    <select id="vendedor" aria-label="Escolher Vendedor">
+                        <option value="" disabled selected>Escolha Vendedor</option>
+                        <option value="vendedor1">Vendedor 1</option>
+                        <option value="vendedor2">Vendedor 2</option>
+                        <option value="vendedor3">Vendedor 3</option>
+                    </select>
+                </div>
+                
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Descrição</th>
+                        <th>Preço unitário</th>
+                        <th>Qtd em Estoque</th>
+                        <th>Total</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><img src="teclado.jpg" alt="Teclado"></td>
+                        <td>TECLADO</td>
+                        <td>R$ 10,00</td>
+                        <td>25</td> <!-- Quantidade em estoque -->
+                        <td>R$ 0,00</td>
+                        <td>
+                            <button>-</button>
+                            <input type="text" value="0">
+                            <button>+</button>
+                            <button style="margin: 10px;">Ver kit do Matérial</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="balde.jpg" alt="Balde Azul Plástico Grande"></td>
+                        <td>BALDE AZUL PLÁSTICO GRANDE</td>
+                        <td>R$ 100,00</td>
+                        <td>25</td> <!-- Quantidade em estoque -->
+                        <td>R$ 0,00</td>
+
+                        <td>
+                            <button>-</button>
+                            <input type="text" value="0">
+                            <button>+</button>
+                            <button style="margin: 10px;">Ver kit do Matérial</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="material.jpg" alt="Material com Especificação"></td>
+                        <td>MATERIAL COM ESPECIF. 1-2-3 COM CADASTRO</td>
+                        <td>R$ 15,00</td>
+                        <td>25</td> <!-- Quantidade em estoque -->
+                        <td>R$ 0,00</td>
+                        
+                        <td>
+                            <button>-</button>
+                            <input type="text" value="0">
+                            <button>+</button>
+                            <button style="margin: 10px;">Ver kit do Matérial</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="especif.jpg" alt="Especificação 1-2-3 Cadastro"></td>
+                        <td>ESPECIF. 1-2-3 CADASTRO</td>
+                        <td>R$ 15,00</td>
+                        <td>25</td> <!-- Quantidade em estoque -->
+                        <td>R$ 0,00</td>
+                        <td>
+                            <button>-</button>
+                            <input type="text" value="0">
+                            <button>+</button>
+                            <button style="margin: 10px;">Ver kit do Matérial</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <aside>
+            <div id="resumo">
+                <h3>Resumo</h3>
+                <p>Subtotal: R$ 0,00</p>
+                <p>Total com Descoonto: R$ 0,00</p>
+                <p>Qtd. Itens: 0</p>
+                <button>PAGAR</button>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
+

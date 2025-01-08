@@ -1,0 +1,248 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #0073e6;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* Espaça os elementos da barra */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: 10px 20px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px; /* Espaço entre os itens do menu */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#orcamento {
+    flex: 3;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#orcamento h2 {
+    margin-bottom: 1rem;
+    color: #0073e6;
+}
+
+.header-orcamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header-orcamento p {
+    font-weight: bold;
+}
+
+/* Style for the 'vendedor' div */
+.vendedor {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 5px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style for the label */
+.vendedor label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Style for the select element */
+.vendedor select {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for the select */
+.vendedor select:hover {
+    border-color: #0a4988;
+    background-color: #f1f1f1;
+}
+
+/* Focus effect for the select */
+.vendedor select:focus {
+    border-color: #0073e6;
+    outline: none;
+    background-color: #fff;
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+table th, table td {
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #0073e6;
+    color: #fff;
+}
+
+table td img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+input[type="text"] {
+    width: 40px;
+    text-align: center;
+    margin: 0 0.5rem;
+}
+
+aside {
+    flex: 1;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 1rem;
+}
+
+#resumo h3 {
+    color: #0073e6;
+    margin-bottom: 1rem;
+}
+
+#resumo p {
+    margin-bottom: 0.5rem;
+}
+
+#resumo button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #28a745;
+}
+
+#resumo button:hover {
+    background-color: #218838;
+}
+/* Estilos para o campo de pesquisa */
+.pesquisa-cliente {
+    display: flex;
+    max-width: 400px; /* Tamanho máximo para o campo de pesquisa */
+}
+
+/* Estilos para o campo de input */
+.pesquisa-cliente input {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Estilos para o botão */
+.pesquisa-cliente button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    margin-left: 0.5rem; /* Espaçamento entre o botão e o input */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para o ícone da lupa */
+.pesquisa-cliente button i {
+    font-size: 1rem;
+}
+
+.pesquisa-produtos {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa-produtos input {
+    width: 350px; /* Ajuste conforme necessário */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.pesquisa-produtos button {
+    padding: 10px;
+    background-color: #E30713; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.pesquisa-produtos button i {
+    font-size: 18px;
+}
